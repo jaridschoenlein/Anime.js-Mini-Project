@@ -1,0 +1,249 @@
+html body {
+    background-color: #f5f5f5;
+    color: #4738b6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    font-family: freight-big-pro, serif;
+    font-weight: 300;
+    font-style: italic;
+    transition: 0.3s;
+
+}
+
+body.darkMode {
+    background-color: #1d1d1d;
+    color: #ffdd1e;
+}
+
+body.darkMode header h1{
+    color: #ffdd1e;
+}
+
+body.darkMode header a h4{
+    color: #ffdd1e;
+}
+
+body.darkMode header a h4:hover {
+    color: #ffdd1e;
+}
+
+body.darkMode header a h4::before {
+    background-color: #ffdd1e;
+}
+
+body.darkMode ion-icon{
+    color: #ffdd1e;
+}
+
+a {
+    text-decoration: none;
+    color: #4738b6 ;
+}
+
+
+header { 
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px 34px;
+    z-index: 2;
+
+}
+
+header h1, header h1 a {
+    font-size: 26px;
+    color: #4738b6;
+    text-decoration: none;
+    z-index: 2;
+
+}
+
+
+
+header div.nav  { 
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+
+}
+
+header div.nav h4{ 
+    margin: 0px 18px;
+    font-size: 20px;
+}
+
+header a h4{
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #4738b6;
+}
+
+
+
+header a h4:hover {
+    color: #4738b6;
+  }
+
+header a h4::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #4738b6;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+
+  header a h4:hover::before {
+    transform: scaleX(1);
+  }
+
+
+
+ion-icon {
+    font-size: 38px;
+    color: #4738b6;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+
+section.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    margin-top: -5vh; 
+}
+
+section.section1 .animes {
+    font-size: 120px;
+    font-weight: 300;
+    line-height: 1.1;
+    z-index: 2;
+    text-transform: uppercase;
+    overflow: hidden;
+
+}
+
+
+.animes .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+section.section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+section.section2 img{
+    height: 270px;
+    width: 270px;
+    margin-top: -10vh; 
+}
+
+.box {
+    background: #f5f5f5;
+    opacity: 1;
+    position: absolute;
+    margin-top: -10vh; 
+    height: 270px;
+    width: 270px;
+    z-index: 0;
+  }
+
+
+
+section.section3  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.section3 .animez {
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    overflow: hidden;
+
+}
+
+.animez .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+@media screen and (max-width: 700px) {
+
+    header h1{
+        font-size: 16px;
+        color: #4738b6;
+        text-decoration: none;
+    }
+
+    header div.nav  { 
+    
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        text-align: right;
+        justify-content: space-between;
+    }
+
+    header div.nav h4{ 
+        margin: 0px 18px;
+        font-size: 16px;
+        text-align: right;
+    }
+
+
+    section.section1 {
+ 
+        margin-top: 2vh; 
+    }
+
+    section.section1 .animes {
+        font-size: 60px;
+    
+    }
+
+    section.section2 img {
+        margin-top: 0vh; 
+    }
+
+    .box {
+        margin-top: 0vh; 
+
+      }
+
+    section.section3  {
+        margin-top: 4vh;
+    }
+
+    section.section3 .animez {
+        font-size: 28px;
+        font-weight: 300;
+    
+    }
+
+
+
+}
